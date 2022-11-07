@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Technology I Used:
 
-## HTML
+<p> HTML </p>
 ## CSS
 ## REACT
 ## TAILWIND CSS
