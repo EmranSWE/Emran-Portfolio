@@ -4,14 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Feature of the website.
 
-## Multi Page
-## Styled with Tailwind CSS and DaisyUi with css and its easy to customize colors
-## Fully Responsive
+## 📖 Multi Page
+## 🎨 Styled with Tailwind CSS and DaisyUi with css and its easy to customize colors
+## 📱 Fully Responsive
 
 
 # Technology I Used:
 
-<p> HTML </p>
+<p>📖 HTML </p>
 <p> CSS </p>
 <p> REACT </p>
 <p> TAILWIND CSS </p>
