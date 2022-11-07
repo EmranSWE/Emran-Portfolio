@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Feature of the website.
 
-## 📖 Multi Page
+<h2> 📖 Multi Page </h2>
 ## 🎨 Styled with Tailwind CSS and DaisyUi with css and its easy to customize colors
 ## 📱 Fully Responsive
 
