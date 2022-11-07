@@ -12,10 +12,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Technology I Used:
 
 <p> HTML </p>
-## CSS
-## REACT
-## TAILWIND CSS
-## DaisyUI
+<p> CSS </p>
+<p> REACT </p>
+<p> TAILWIND CSS </p>
+<p> DaisyUI</p>
+
 
 
 # Tools I Used 
