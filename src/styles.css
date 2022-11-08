@@ -96,3 +96,16 @@ body{
  .textAccent{
   color: #37CDBE;
  }
+ @keyframes example {
+  0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+  75%  {color:green; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
+}
+
+ .textEffect:hover{
+  font-size: 40px;
+  transition: font-size 2s;
+  animation: example 5s linear 2s infinite alternate;
+ }

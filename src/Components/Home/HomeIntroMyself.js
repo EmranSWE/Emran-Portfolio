@@ -30,7 +30,7 @@ const HomeIntroMyself = () => {
             </div>
 
             <div className='grid grid-cols-1'>
-                <h1 className='text-5xl text-center'>Find Me On:</h1>
+                <h1 className='text-5xl text-center my-4'>Find Me On:</h1>
                 <p className='text-xl text-center'>Feel Free <span className='textPrimary'>To Connect</span>  With Me!</p>
                 <div className='text-center'>
                 <ul className=" flex justify-center my-10">   

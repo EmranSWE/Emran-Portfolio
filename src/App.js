@@ -14,10 +14,14 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MessageList from './Components/Home/MessageList';
 import Login from './Components/Shared/Login';
-
+import useSound from 'use-sound';
+import mySound from './Assets/mind.mp3';
+import Blogs from './Components/Blogs/Blogs';
 function App() {
+  const [play, {stop}] = useSound(mySound, { volume: 0.1 });
+
   return (
-    <div>
+    <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
       <ParticleBG></ParticleBG>
       <Navbar></Navbar>
      <Routes>
@@ -30,6 +34,7 @@ function App() {
         <Route path='/message' element={<MessageList></MessageList>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/addproject' element={<AddProjects></AddProjects>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
      </Routes> 
      <ToastContainer />
       <Footer></Footer>

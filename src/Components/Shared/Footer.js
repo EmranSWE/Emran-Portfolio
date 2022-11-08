@@ -1,6 +1,7 @@
 import React from 'react';
 import footer from '../../Assets/footer.png';
 import logo from '../../Assets/EMRAN__1_-removebg-preview.png'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     const d = new Date();
     let year = d.getFullYear();
@@ -31,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title">More </span>
-                    <a className="link link-hover">Blogs</a>
+                    <a  className="link link-hover"><Link to='/blogs'>Blogs</Link></a>
                     <a className="link link-hover">Recent Activities</a>
                     <a className="link link-hover">Award</a>
                 </div>
