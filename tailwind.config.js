@@ -5,19 +5,13 @@ module.exports = {
     themes: [
       {
         mytheme: {
-
-          "primary": "#6610f2",
-
-          "secondary": "#F000B8",
-
-          "accent": "#37CDBE",
-
-          
+          "primary": "#c770f0",
+          "secondary": "#99FF33",
+          "accent": "#37CDBE",          
         },
       },
-       "light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter",
-    ],
-    
+        "light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter",
+    ],  
   },
   plugins: [require("daisyui")],
 }

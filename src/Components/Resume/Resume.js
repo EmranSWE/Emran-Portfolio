@@ -19,7 +19,7 @@ const Resume = () => {
          <div >
         <div className="grid justify-items-center my-4  ">
         <a  href={pdfResume}>
-        <button class="btn btn-primary"
+        <button className="btn btn-primary"
         target='_blank'
           >
             < AiOutlineDownload />
@@ -37,7 +37,7 @@ const Resume = () => {
         
 
         <div className="grid justify-items-center">
-          <button class="btn btn-primary"
+          <button className="btn btn-primary"
             href={pdfResume}
             target="_blank" 
           >

@@ -9,9 +9,13 @@ import Resume from './Components/Resume/Resume';
 import Navbar from './Components/Shared/Navbar';
 import Footer from './Components/Shared/Footer';
 import ParticleBG from './Components/ParticleBackGround/ParticleBG';
-import ReactPDF from './Components/Resume/ReactPDF';
+import AddProjects from './Components/Projects/AddProjects';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import MessageList from './Components/Home/MessageList';
+import Login from './Components/Shared/Login';
+
 function App() {
-  
   return (
     <div>
       <ParticleBG></ParticleBG>
@@ -22,8 +26,12 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path='/resume' element={<Resume></Resume>}></Route>
+        <Route path='*' element={<Home></Home>}></Route>
+        <Route path='/message' element={<MessageList></MessageList>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/addproject' element={<AddProjects></AddProjects>}></Route>
      </Routes> 
-     <ReactPDF></ReactPDF>
+     <ToastContainer />
       <Footer></Footer>
     </div>
   );

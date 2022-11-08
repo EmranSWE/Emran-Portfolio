@@ -83,3 +83,16 @@ body{
   .effect-text{
     color: red;
   }
+
+ .textPrimary{
+  color:  #c770f0;
+ }
+
+ 
+ .textSecondary{
+  color:  #99FF33;
+ }
+
+ .textAccent{
+  color: #37CDBE;
+ }
