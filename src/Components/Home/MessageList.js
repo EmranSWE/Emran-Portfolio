@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const MessageList = () => {
     const [newMessages,setNewMessages]=useState([]);
     useEffect(()=>{
-        const url =`http://localhost:5000/message`;
+        const url =`https://quiet-everglades-41719.herokuapp.com/message`;
         fetch(url)
         .then(res=> res.json())
         .then(data=> setNewMessages(data))

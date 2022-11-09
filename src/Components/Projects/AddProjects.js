@@ -30,7 +30,7 @@ const AddProjects = () => {
                     img:img
                 }
                 //Upload file to databases
-                    fetch('http://localhost:5000/project',{
+                    fetch('https://quiet-everglades-41719.herokuapp.com/project',{
                         method:"POST",
                         headers:{
                             'content-type':'application/json'

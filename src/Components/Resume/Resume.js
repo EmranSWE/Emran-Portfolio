@@ -35,6 +35,7 @@ const Resume = () => {
         
 
         <div className="grid justify-items-center">
+        <a  href={pdfResume}>
           <button className="btn btn-primary"
             href={pdfResume}
             target="_blank" 
@@ -42,7 +43,9 @@ const Resume = () => {
             <AiOutlineDownload />
             &nbsp;Download CV
           </button>
+          </a>
         </div>
+        
 
       
          

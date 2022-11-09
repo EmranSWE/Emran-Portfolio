@@ -32,7 +32,16 @@ const Navbar = () => {
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/projects'>Project</Link></li>
                     <li><Link to='/resume'>Resume</Link></li>
-                     
+                    <li><Link to='/blogs'>Blogs</Link></li>
+                    {user ? <li><Link to='/signout'  onClick={logout}>Sign Out</Link></li>: <li><Link to='/login'>Login</Link></li> }
+                    {
+                         user?.email ==="mdemran.swe@gmail.com"
+                         && <> <li><Link to='/addproject'>Add Project</Link></li>
+                         <li><Link to='/addproject'>Add Project</Link></li>
+                    <li><Link to='/message'>message</Link></li></>
+                   }
+
+                   
                     </ul>
                 </div>
                 {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}

@@ -8,8 +8,9 @@ import 'animate.css';
 const Home = () => {
     return (
         <div >
-            <div className="grid lg:grid-cols-3 sm:grid-cols-1 " >
-                <div className='p-40 lg:col-span-2'>
+            <div className='hero'>
+            <div className="hero-content grid lg:grid-cols-3 sm:grid-cols-1 " >
+                <div className=' lg:col-span-2'>
                     <p className="text-4xl textEffect ">Hi There!
                         <span className="wave text-4xl" role="img" aria-labelledby="wave">
                             👋🏻
@@ -26,6 +27,8 @@ const Home = () => {
                     <img src={homeMain} className="p-2  " />
                 </div>
             </div>
+            </div>
+           
             {/* 
         ----------------
         My Introduction Section
