@@ -8,7 +8,7 @@ const particleConfig = {
     "position": "",
     "repeat": "",
     "size": "",
-    "opacity": 0.8
+    "opacity": 1
   },
   "backgroundMask": {
     "composite": "destination-out",
@@ -22,7 +22,7 @@ const particleConfig = {
   },
   "fullScreen": {
     "enable": true,
-    "zIndex": 1
+    "zIndex": 0
   },
   "detectRetina": true,
   "duration": 0,
@@ -132,39 +132,16 @@ const particleConfig = {
             }
           },
           "collisions": {
-            "enable": false,
-            "bounce": {
-              "horizontal": {
-                "random": {}
-              },
-              "vertical": {
-                "random": {}
-              }
-            },
-            "overlap": {}
+            "enable": false
           },
           "links": {
-            "enable": false,
-            "shadow": {},
-            "triangles": {}
+            "enable": false
           },
           "move": {
             "outModes": {
               "default": "destroy"
             },
-            "speed": 2,
-            "angle": {},
-            "attract": {
-              "rotate": {}
-            },
-            "distance": {},
-            "gravity": {},
-            "path": {
-              "delay": {
-                "random": {}
-              }
-            },
-            "trail": {}
+            "speed": 2
           },
           "size": {
             "value": 5,
@@ -175,77 +152,8 @@ const particleConfig = {
               "sync": true,
               "startValue": "min",
               "destroy": "max"
-            },
-            "random": {}
-          },
-          "bounce": {
-            "horizontal": {
-              "random": {}
-            },
-            "vertical": {
-              "random": {}
             }
-          },
-          "destroy": {
-            "split": {
-              "factor": {
-                "random": {}
-              },
-              "rate": {
-                "random": {}
-              }
-            }
-          },
-          "life": {
-            "delay": {
-              "random": {}
-            },
-            "duration": {
-              "random": {}
-            }
-          },
-          "number": {
-            "density": {}
-          },
-          "opacity": {
-            "animation": {},
-            "random": {}
-          },
-          "roll": {
-            "darken": {},
-            "enlighten": {}
-          },
-          "rotate": {
-            "animation": {}
-          },
-          "shadow": {
-            "offset": {}
-          },
-          "shape": {},
-          "stroke": {
-            "color": {
-              "value": "",
-              "animation": {
-                "count": 0,
-                "enable": false,
-                "offset": {
-                  "max": 0,
-                  "min": 0
-                },
-                "speed": 0,
-                "decay": 0,
-                "sync": false
-              }
-            }
-          },
-          "tilt": {
-            "animation": {}
-          },
-          "twinkle": {
-            "lines": {},
-            "particles": {}
-          },
-          "wobble": {}
+          }
         }
       },
       "light": {
@@ -481,36 +389,7 @@ const particleConfig = {
       }
     },
     "stroke": {
-      "width": 0,
-      "color": {
-        "value": "",
-        "animation": {
-          "h": {
-            "count": 0,
-            "enable": false,
-            "offset": 0,
-            "speed": 0,
-            "decay": 0,
-            "sync": false
-          },
-          "s": {
-            "count": 0,
-            "enable": false,
-            "offset": 0,
-            "speed": 1,
-            "decay": 0,
-            "sync": true
-          },
-          "l": {
-            "count": 0,
-            "enable": false,
-            "offset": 0,
-            "speed": 1,
-            "decay": 0,
-            "sync": true
-          }
-        }
-      }
+      "width": 0
     },
     "zIndex": {
       "random": {

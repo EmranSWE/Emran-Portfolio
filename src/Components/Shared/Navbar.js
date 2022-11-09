@@ -57,7 +57,6 @@ const Navbar = () => {
                    {
                          user?.email ==="mdemran.swe@gmail.com"
                          && <> <li><Link to='/addproject'>Add Project</Link></li>
-                         <li><Link to='/addproject'>Add Project</Link></li>
                     <li><Link to='/message'>message</Link></li></>
                    }
                     <li><Link to='/blogs'>Blogs</Link></li>

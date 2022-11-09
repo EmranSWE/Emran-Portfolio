@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading';
 
 const MessageList = () => {
-    const [newMessages,setNewMessages]=useState([]);
-    useEffect(()=>{
-        const url =`https://quiet-everglades-41719.herokuapp.com/message`;
-        fetch(url)
-        .then(res=> res.json())
-        .then(data=> setNewMessages(data))
-    },[]);
+
+    const {data:messages,isLoading}=useQuery('messages', () => fetch('https://quiet-everglades-41719.herokuapp.com/message').then(res => res.json()))
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+   
     return (
         <div>
             <h1 className='textPrimary text-center'>My Message List</h1>
-            <div class="overflow-x-auto">
-            <table class="table w-1/2 mx-auto">
+            <div className="overflow-x-auto">
+            <table className="table w-1/2 mx-auto">
                 <thead>
                     <tr>
                         <th></th>
@@ -24,7 +25,7 @@ const MessageList = () => {
                 </thead>
                 <tbody>
                     {
-                        newMessages.map((textMessage,index) => <tr key={index}>
+                        messages?.map((textMessage,index) => <tr key={index}>
                             <td>{index+1}</td>
                             <td>{textMessage.name}</td>
                             <td>{textMessage.email}</td>

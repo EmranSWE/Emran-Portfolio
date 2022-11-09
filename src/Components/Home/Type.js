@@ -11,6 +11,7 @@ const Type = () => {
             "MERN Stack Developer 💻",
             "Data Analyst 🖥",
             "Data Scientist 🖥",
+            "Data Science and Machine learning Enthusiast ||"
           ],
           autoStart: true,
           loop: true,

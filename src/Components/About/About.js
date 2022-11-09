@@ -15,29 +15,38 @@ const About = () => {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               Know Who <strong className="purple">I'M</strong>
             </h1>
-            <blockquote className="blockquote mb-0">
+            <blockquote className="blockquote mb-0 text-xl">
               <p style={{ textAlign: "justify" }}>
                 Hi Everyone, I am <span className="textPrimary">MD EMRAN </span>
                 from <span className="textPrimary"> Dhaka,Bangladesh.</span>
-                <br />I have completed my graduation from Daffodil International University
                 <br />
-                <br />
+                I have completed my undergraduate degree in Department of Software Engineering Major in Data Science from Daffodil International University.
+                <br /> I developed a keen interest in IT, especially web development and data science in the school itself, and eventually pursued my education that directed my career opportunities to the IT industry.
+                <br /> I have learned HTML,CSS,
+                JavaScript, React, Firebase, MongoDB.
                 Apart from coding, some other activities that I love to do!
               </p>
-              <ul>
-                <li className="flex">
-                  <ImPointRight /> Playing Games
+              <ul className='my-4'>
+                <li className="flex text-2xl">
+                  <ImPointRight /> <span className='ml-2'>Playing Cricket</span>
                 </li>
-                <li className="flex">
-                  <ImPointRight /> Writting Tech Blogs
+                <li className="flex text-2xl">
+                  <ImPointRight /> <span className='ml-2'>Traveling new place</span>
                 </li>
-                <li className="flex">
-                  <ImPointRight /> Travelling
+                <li className="flex text-2xl">
+                  <ImPointRight /> <span className='ml-2'>Bike riding with friend</span>
                 </li>
+                <li className="flex text-2xl">
+                  <ImPointRight /> <span className='ml-2'>Explore new techbology</span>
+                </li>
+
+
               </ul>
 
-              <p style={{ color: "rgb(155 126 172)" }}>
-                "Strive to build things that make a difference!"{" "}
+              <p className='textPrimary'>
+                SIt is time of data.You can do anything using your previous data. <br /> 'If you properly use your data, you can grow your business faster than your competitors":
+                {" "}
+                <footer className="text-center">-Emran</footer>
               </p>
             </blockquote>
           </div>
@@ -49,12 +58,23 @@ const About = () => {
       <h1 className='text-center text-5xl my-7'>Profession Skill</h1>
       <Skills></Skills>
       <h1 className='text-center text-5xl my-7'>Experience</h1>
-      <div class="hero  bg-base-200">
-        <div class="hero-content grid lg:grid-cols-2 sm:grid-cols-1">
+      <div className="hero  bg-base-200">
+        <div className="hero-content grid lg:grid-cols-2 sm:grid-cols-1">
 
           <div>
-            <h1 class="text-5xl font-bold">Here are some of skill</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <h1 className="text-5xl font-bold">What <span className='textPrimary'>I</span>  know!</h1>
+            <p className='mt-6 mb-4'>Additionally, I am skilled in <span className='textSecondary'>planning, designing, developing, implementing, and debugging</span>  web application development and also <span className='textSecondary'>data analysis</span> .</p>
+            <p>Also, I am good at object-oriented programming, Core javaScript, Front-end development frameworks <span className='textSecondary'>React & NoSQL, and Visual Studio.</span>  As of now, I am a professional web developer with various knowledge. </p>
+
+          <p> Currently, I have completed lots of projects which helped me to become a full-stack developer. I have completed the certification <span className='textSecondary'>exam in the programming hero full-stack developer course.</span></p>
+
+              <p>
+              I have completed my thesis based on Machine learning. The research paper named is:<span className='textSecondary'>customer behavioral segmentation using machine learning approach.</span> C I am joining some hackathon.
+              </p>
+
+             <p>
+             I have also completed lots of projects using C#, PHP, JAVA etc.
+             </p>
           </div>
           <div>
             <SkillProgress></SkillProgress>

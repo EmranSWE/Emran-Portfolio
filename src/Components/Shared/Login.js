@@ -20,8 +20,8 @@ const Login = () => {
       }
     return (
         <div>
-            <div class="flex flex-col w-48 mx-auto border-opacity-50">
-                <div class="grid h-20 card bg-base-300 rounded-box place-items-center"><button onClick={() => signInWithGoogle()}>Google Sign In</button></div>               
+            <div className="flex flex-col w-48 mx-auto border-opacity-50">
+                <div className="grid h-20 card bg-base-300 rounded-box place-items-center"><button onClick={() => signInWithGoogle()}>Google Sign In</button></div>               
             </div>
         </div>
     );

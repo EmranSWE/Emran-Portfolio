@@ -58,7 +58,7 @@ const AddProjects = () => {
                 <input  {...register("name", {
                     required: {
                         value: true,
-                        message: "Name is required"
+                        message: "Project Name is required"
                     }
                 })} type="text" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
                 <label className="label">
@@ -71,7 +71,7 @@ const AddProjects = () => {
                 <input  {...register("description", {
                     required: {
                         value: true,
-                        message: "Description is required"
+                        message: "Projects description is required"
                     },
                     pattern: {
                         message: 'Provide a valid email' // 
@@ -89,7 +89,7 @@ const AddProjects = () => {
                         value: true,
                         message: "Github link is required"
                     }
-                })} type="text" placeholder="Project Description" className="input input-bordered w-full max-w-xs" />
+                })} type="text" placeholder="Project Github Link" className="input input-bordered w-full max-w-xs" />
                 <label className="label">
                     {errors.github?.type === 'required' && <span className="label-text-alt text-red-500">{errors.github.message}</span>}
                 </label>
@@ -102,7 +102,7 @@ const AddProjects = () => {
                         value: true,
                         message: "Live link is required"
                     }
-                })} type="text" placeholder="Project Description" className="input input-bordered w-full max-w-xs" />
+                })} type="text" placeholder="Project Live Demo Link" className="input input-bordered w-full max-w-xs" />
                 <label className="label">
                     {errors.live?.type === 'required' && <span className="label-text-alt text-red-500">{errors.live.message}</span>}
                 </label>
@@ -117,7 +117,7 @@ const AddProjects = () => {
                     }
                 })} type="file" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
                 <label className="label">
-                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                    {errors.image?.type === 'required' && <span className="label-text-alt text-red-500">{errors.image.message}</span>}
 
                 </label>
                 <input className='btn w-full max-w-xs ' type="submit" value="Add" />

@@ -30,14 +30,14 @@ const ContactForm = () => {
     return (
         <div>
             <h1 className='text-2xl text-center'>Contact With Me</h1>
-            <div class=" ">
-                <div class=" shadow-xl ">
+            <div className=" ">
+                <div className=" shadow-xl ">
                     <form form onSubmit={handleSubmit(onSubmit)}>
-                        <div class="form">
+                        <div className="form">
                             <div className='flex justify-center'>
-                                <div class=" mr-2">
-                                    <label class="label">
-                                        <span class="label-text">Name</span>
+                                <div className=" mr-2">
+                                    <label className="label">
+                                        <span className="label-text">Name</span>
                                     </label>
                                     <input  {...register("name", {
                                         required: {
@@ -49,9 +49,9 @@ const ContactForm = () => {
                                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                                     </label>
                                 </div>
-                                <div class="form-control">
-                                    <label class="label">
-                                        <span class="label-text">Email</span>
+                                <div className="form-control">
+                                    <label className="label">
+                                        <span className="label-text">Email</span>
                                     </label>
                                     <input  {...register("email", {
                                         required: {
@@ -64,9 +64,9 @@ const ContactForm = () => {
                                     </label>
                                 </div>
                             </div>
-                            <div class="">
-                                <label class="label">
-                                    <span class="label-text">Subject</span>
+                            <div className="">
+                                <label className="label">
+                                    <span className="label-text">Subject</span>
                                 </label>
                                 <input  {...register("subject", {
                                         required: {
@@ -78,9 +78,9 @@ const ContactForm = () => {
                                         {errors.subject?.type === 'required' && <span className="label-text-alt text-red-500">{errors.subject.message}</span>}
                                     </label>
                             </div>
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text">Message</span>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Message</span>
                                 </label>
                                 <input  {...register("message", {
                                         required: {
@@ -92,8 +92,8 @@ const ContactForm = () => {
                                         {errors.message?.type === 'required' && <span className="label-text-alt text-red-500">{errors.message.message}</span>}
                                     </label>
                             </div>
-                            <div class="form-control mt-6">
-                                <button class="btn btn-primary"> Send Message!</button>
+                            <div className="form-control mt-6">
+                                <button className="btn btn-primary"> Send Message!</button>
                             </div>
                         </div>
                     </form>

@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
 
                 <div>
-                    <img src={homeMain} className="p-2  " />
+                    <img src={homeMain} className="p-2  "  alt='home main'/>
                 </div>
             </div>
             </div>
@@ -37,14 +37,14 @@ const Home = () => {
             <HomeIntroMyself></HomeIntroMyself>
 
             {/* Contact */}
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row-reverse">
-                    <div class="text-center lg:text-left">
-                        <h1 class="text-5xl font-bold">Send <span className='textPrimary'> Message</span> now!</h1>
-                        <p class="py-6">I'm interested in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact with me</p>
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <div className="text-center lg:text-left">
+                        <h1 className="text-5xl font-bold">Send <span className='textPrimary'> Message</span> now!</h1>
+                        <p className="py-6">I'm interested in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact with me</p>
                     </div>
-                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <div class="card-body">
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="card-body">
                             <ContactForm></ContactForm>
                         </div>
                     </div>

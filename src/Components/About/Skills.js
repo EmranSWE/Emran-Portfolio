@@ -12,12 +12,14 @@ import {
     SiPytorch,
     SiFirebase,
     SiNextdotjs,
+    SiPandas,
+    SiExpress,
 } from "react-icons/si";
 
 const Skills = () => {
     return (
         <div>
-            <div className="grid lg:grid-cols-5 sm:grid-cols-1 gap-5 ">
+            <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-1 gap-5 ">
               
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
                     <h1 className='text-9xl font-bold  ml-12 textAccent'><CgCPlusPlus /></h1>                    
@@ -38,25 +40,23 @@ const Skills = () => {
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
                     <h1 className='text-9xl font-bold  ml-12 textAccent'><DiMongodb /></h1>                    
                 </div>
-
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
                     <h1 className='text-9xl font-bold  ml-12 textAccent'><DiPython /></h1>                    
                 </div>
-
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
                     <h1 className='text-9xl font-bold  ml-12 textAccent'><DiGit /></h1>                    
                 </div>
-
-                <div className="w-52 rounded mx-auto border-4 border-primary ">
-                    <h1 className='text-9xl font-bold  ml-12 textAccent'><SiPytorch /></h1>                    
-                </div>
+           
 
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
                     <h1 className='text-9xl font-bold  ml-12 textAccent'><SiFirebase /></h1>                    
                 </div>
+                <div className="w-52 rounded mx-auto border-4 border-primary ">
+                    <h1 className='text-9xl font-bold  ml-12 textAccent'><SiExpress /></h1>                    
+                </div>
 
                 <div className="w-52 rounded mx-auto border-4 border-primary ">
-                    <h1 className='text-9xl font-bold  ml-12 textAccent'><SiNextdotjs /></h1>                    
+                    <h1 className='text-9xl font-bold  ml-12 textAccent'><SiPandas /></h1>                    
                 </div>
         </div>
         </div>
