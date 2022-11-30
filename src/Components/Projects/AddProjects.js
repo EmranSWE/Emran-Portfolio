@@ -20,32 +20,33 @@ const AddProjects = () => {
         })
             .then((response) => response.json())
             .then((result) => {
-                if(result.success){
+                if (result.success) {
                     const img = result.data.url;
-                const projects = {
-                    name:data.name,
-                    description:data.name,
-                    github:data.github,
-                    live:data.live,
-                    img:img
-                }
-                //Upload file to databases
-                    fetch('https://quiet-everglades-41719.herokuapp.com/project',{
-                        method:"POST",
-                        headers:{
-                            'content-type':'application/json'
+                    const projects = {
+                        name: data.name,
+                        description: data.description,
+                        technology: data.technology,
+                        github: data.github,
+                        live: data.live,
+                        img: img
+                    }
+                    //Upload file to databases
+                    fetch('https://quiet-everglades-41719.herokuapp.com/project', {
+                        method: "POST",
+                        headers: {
+                            'content-type': 'application/json'
                         },
                         body: JSON.stringify(projects)
                     })
-                    .then(res=> res.json())
-                    .then(data => {
-                        if(data.insertedId){
-                            <Loading></Loading>
-                            toast.success('New Project Added Successfully');
-                            reset();
-                        }
-                    })
-                } 
+                        .then(res => res.json())
+                        .then(data => {
+                            if (data.insertedId) {
+                                <Loading></Loading>
+                                toast.success('New Project Added Successfully');
+                                reset();
+                            }
+                        })
+                }
             })
     }
     return (
@@ -60,7 +61,7 @@ const AddProjects = () => {
                         value: true,
                         message: "Project Name is required"
                     }
-                })} type="text" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
+                })} type="text" placeholder="Project Name" className="input input-bordered w-full max-w-xs" />
                 <label className="label">
                     {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                 </label>
@@ -74,13 +75,30 @@ const AddProjects = () => {
                         message: "Projects description is required"
                     },
                     pattern: {
-                        message: 'Provide a valid email' // 
+                        message: 'Provide a valid description' // 
                     }
-                })} type="textarea"  placeholder="Project Description" className="input input-bordered w-full h-20n max-w-xs" />
+                })} type="textarea" placeholder="Project Description" className="input input-bordered w-full h-20n max-w-xs" />
+
                 <label className="label">
                     {errors.description?.type === 'required' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
-                    {errors.description?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
                 </label>
+
+                <label className="label">
+                    <span className="label-text">Technology Stack</span>
+                </label>
+                <input  {...register("technology", {
+                    required: {
+                        value: true,
+                        message: "Projects technology is required"
+                    },
+                    pattern: {
+                        message: 'Provide a valid technology' // 
+                    }
+                })} type="textarea" placeholder="Technology Stack" className="input input-bordered w-full h-20n max-w-xs" />
+                <label className="label">
+                    {errors.technology?.type === 'required' && <span className="label-text-alt text-red-500">{errors.technology.message}</span>}
+                </label>
+
                 <label className="label">
                     <span className="label-text">Project Github Link</span>
                 </label>
@@ -115,7 +133,7 @@ const AddProjects = () => {
                         value: true,
                         message: "Image is required"
                     }
-                })} type="file" placeholder="Your Name" className="input input-bordered w-full max-w-xs" />
+                })} type="file" placeholder="Your Name" className="file-input w-full max-w-xs" />
                 <label className="label">
                     {errors.image?.type === 'required' && <span className="label-text-alt text-red-500">{errors.image.message}</span>}
 

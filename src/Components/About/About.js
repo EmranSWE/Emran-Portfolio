@@ -37,21 +37,22 @@ const About = () => {
                   <ImPointRight /> <span className='ml-2'>Bike riding with friend</span>
                 </li>
                 <li className="flex text-2xl">
-                  <ImPointRight /> <span className='ml-2'>Explore new techbology</span>
+                  <ImPointRight /> <span className='ml-2'>Explore new technology</span>
                 </li>
 
 
               </ul>
 
               <p className='textPrimary'>
-                SIt is time of data.You can do anything using your previous data. <br /> 'If you properly use your data, you can grow your business faster than your competitors":
+                It is time of data.You can do anything using your previous data. <br /> 'If you properly use your data, you can grow your business faster than your competitors":
                 {" "}
+                </p>
                 <footer className="text-center">-Emran</footer>
-              </p>
+             
             </blockquote>
           </div>
           <div>
-            <img src={about} className="p-2 " />
+            <img src={about} className="p-2 " alt={about} />
           </div>
         </div>
       </div>

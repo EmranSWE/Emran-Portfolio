@@ -30,7 +30,7 @@ const MessageList = () => {
                             <td>{textMessage.name}</td>
                             <td>{textMessage.email}</td>
                             <td>{textMessage.subject}</td>
-                            <td>{textMessage.message>45}</td>
+                            <td>{textMessage.message.slice(0,50) }</td>
                         </tr>)} 
                 </tbody>
             </table>

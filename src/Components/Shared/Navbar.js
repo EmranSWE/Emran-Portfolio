@@ -29,11 +29,11 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <li><Link to='/home'>Home</Link></li>
-                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/about'>About Me</Link></li>
                     <li><Link to='/projects'>Project</Link></li>
                     <li><Link to='/resume'>Resume</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
-                    {user ? <li><Link to='/signout'  onClick={logout}>Sign Out</Link></li>: <li><Link to='/login'>Login</Link></li> }
+                    {user ? <li><Link to='/signOut'  onClick={logout}>Sign Out</Link></li>: <li><Link to='/login'>Login</Link></li> }
                     {
                          user?.email ==="mdemran.swe@gmail.com"
                          && <> <li><Link to='/addproject'>Add Project</Link></li>
