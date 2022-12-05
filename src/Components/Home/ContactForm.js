@@ -7,7 +7,7 @@ const ContactForm = () => {
 
     const onSubmit = message => {
 
-        const url =`https://quiet-everglades-41719.herokuapp.com/message`
+        const url =`https://emran-portfolio-server-side.onrender.com/message`
         fetch(url,{
             method:"POST",
             headers:{

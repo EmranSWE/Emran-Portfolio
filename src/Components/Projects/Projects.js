@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
 
-    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://quiet-everglades-41719.herokuapp.com/project').then(res => res.json()))
+    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://emran-portfolio-server-side.onrender.com/project').then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>
     }

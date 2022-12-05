@@ -31,7 +31,7 @@ const AddProjects = () => {
                         img: img
                     }
                     //Upload file to databases
-                    fetch('https://quiet-everglades-41719.herokuapp.com/project', {
+                    fetch('https://emran-portfolio-server-side.onrender.com/project', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json'

@@ -9,7 +9,7 @@ const SingleProject = () => {
   const { isLoading, error, data: projectDetails } = useQuery({
     queryKey: 'ProjectDetails',
     queryFn: () =>
-      fetch(`https://quiet-everglades-41719.herokuapp.com/project/${id}`).then(res =>
+      fetch(`https://emran-portfolio-server-side.onrender.com/project/${id}`).then(res =>
         res.json()
       )
   });
