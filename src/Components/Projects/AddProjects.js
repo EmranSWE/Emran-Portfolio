@@ -31,7 +31,7 @@ const AddProjects = () => {
                         img: img
                     }
                     //Upload file to databases
-                    fetch('https://emran-portfolio-server-side.onrender.com/project', {
+                    fetch('https://emran-portfolio-server-6vj9y.ondigitalocean.app/project', {
                         method: "POST",
                         headers: {
                             'content-type': 'application/json'
