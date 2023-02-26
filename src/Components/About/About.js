@@ -75,7 +75,7 @@ const About = () => {
           <p> Currently, I have completed lots of projects which helped me to become a full-stack developer. I have completed the certification <span className='textSecondary'>exam in the programming hero full-stack developer course.</span></p>
 
               <p>
-              I have completed my thesis based on Machine learning. The research paper named is:<span className='textSecondary'>customer behavioral segmentation using machine learning approach.</span> C I am joining some hackathon.
+              I have completed my thesis based on Machine learning. The research paper named is:<span className='textSecondary'>customer behavioral segmentation using machine learning approach.</span>I am joining some hackathon.
               </p>
 
              <p>

@@ -9,10 +9,9 @@ const HomeBlog = () => {
       .then(response => setPosts(response.data.items.slice(0, 3)))
       .catch(error => console.log(error));
   }, []);
-console.log(posts)
     return (
         <div>
-            <h1><h1 className='text-3xl text-center my-5'>My <span className='textPrimary'>Recent</span>  Blogs</h1></h1>
+            <h1><h1 className='text-3xl text-center mt-5'>My <span className='textPrimary'>Recent</span>  Blogs</h1></h1>
            {
            posts.map(post => (<BlogPost key={BlogPost._id} post={post}></BlogPost>
            ))}  

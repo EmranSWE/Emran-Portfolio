@@ -10,7 +10,7 @@ const HomePageProject = () => {
         return <Loading></Loading>
     }
     const showingProject = projects.slice(0,6);
-    console.log(showingProject);
+
     return (
         <div>
             <h1 className='text-3xl text-center my-5'>My <span className='textPrimary'>Recent</span>  Projects</h1>

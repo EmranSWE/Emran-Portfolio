@@ -6,19 +6,19 @@ const SkillProgress = () => {
            <div className='ml-4'>
            <div>
             <h1 className=''>Front End </h1> 
-           <progress className="progress progress-primary  w-100" value="90" max="100"></progress>
+           <progress className="progress progress-primary  w-100" value="95" max="100"></progress>
             </div>
             <div>
             <h1 className=''>Back End </h1> 
-           <progress className="progress progress-primary  w-100" value="80" max="100"></progress>
+           <progress className="progress progress-primary  w-100" value="85" max="100"></progress>
             </div>
             <div>
             <h1 className=''>Data Analysis</h1> 
-           <progress className="progress progress-secondary w-100" value="80" max="100"></progress>
+           <progress className="progress progress-secondary w-100" value="85" max="100"></progress>
             </div>
             <div>
             <h1 className=''>Data Science </h1> 
-           <progress className="progress progress-error w-100" value="60" max="100"></progress>
+           <progress className="progress progress-error w-100" value="70" max="100"></progress>
             </div>
            </div>
         </div>
