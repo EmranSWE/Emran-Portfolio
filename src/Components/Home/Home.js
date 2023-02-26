@@ -1,9 +1,18 @@
 import React from 'react';
-import homeMain from '../../Assets/home-main.svg'
+import homeMain from '../../Assets/EMRAN.png';
 import ContactForm from './ContactForm';
-import HomeIntroMyself from './HomeIntroMyself';
 import Type from './Type';
 import 'animate.css';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
+import {
+    AiFillGithub,
+    AiOutlineTwitter,
+    AiFillInstagram,
+  } from "react-icons/ai";
+  import { FaLinkedinIn } from "react-icons/fa";
+import HomeBlog from './HomeBlog';
+import HomePageProject from './HomePageProject';
 
 const Home = () => {
     return (
@@ -24,7 +33,7 @@ const Home = () => {
                 </div>
 
                 <div>
-                    <img src={homeMain} className="p-2  "  alt='home main'/>
+                    <img src={homeMain} className="p-2"  alt='home main'/>
                 </div>
             </div>
             </div>
@@ -34,10 +43,70 @@ const Home = () => {
         My Introduction Section
         -----------------
         */}
-            <HomeIntroMyself></HomeIntroMyself>
-
+           
+           {/* About */}
+           <About></About>
+           {/* All Projects */}
+           <HomePageProject></HomePageProject>
+    
+          {/* Home Page Blogs */}
+          <HomeBlog></HomeBlog>
             {/* Contact */}
-            <div className="hero min-h-screen bg-base-200">
+            <div className='grid grid-cols-1'>
+                <h1 className='text-5xl text-center mt-4'>Find Me On:</h1>
+                <p className='text-xl text-center'>Feel Free <span className='textPrimary'>To Connect</span>  With Me!</p>
+                <div className='text-center'>
+                <ul className=" flex justify-center">   
+             <li>
+                <a
+                  href="https://github.com/EmranSWE/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="textAccent"
+                >
+                  <p className='text-3xl'><AiFillGithub /></p>
+                </a>
+              </li>            
+                    <li>
+                <a
+                  href="https://twitter.com/EmranSwe"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="textAccent"
+                >
+                    <p className='text-3xl mx-2'> <AiOutlineTwitter /></p>
+                 
+                </a>
+              </li>
+                   
+             
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/emran2k18/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="textAccent"
+                >
+                    <p className='text-3xl mx-2'><FaLinkedinIn /></p>
+                  
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/md_imran_sheikh/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="textAccent"
+                >
+                    <p className='text-3xl mx-2'><AiFillInstagram /></p>
+                </a>
+              </li>
+            </ul>
+                </div>
+
+            </div>
+            <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Send <span className='textPrimary'> Message</span> now!</h1>
@@ -51,8 +120,6 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
-
     );
 };
 

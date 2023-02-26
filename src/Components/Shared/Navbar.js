@@ -21,7 +21,7 @@ const Navbar = () => {
       };
      
     return (
-        <div className="navbar ">
+        <div className="navbar">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <li><Link to='/projects'>Project</Link></li>
                     <li><Link to='/resume'>Resume</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
-                    {user ? <li><Link to='/signOut'  onClick={logout}>Sign Out</Link></li>: <li><Link to='/login'>Login</Link></li> }
+                    
                     {
                          user?.email ==="mdemran.swe@gmail.com"
                          && <> <li><Link to='/addproject'>Add Project</Link></li>
@@ -60,8 +60,6 @@ const Navbar = () => {
                     <li><Link to='/message'>message</Link></li></>
                    }
                     <li><Link to='/blogs'>Blogs</Link></li>
-
-                    {user ? <li><Link to='/signout'  onClick={logout}>Sign Out</Link></li>: <li><Link to='/login'>Login</Link></li> }
                     
                 </ul>
             </div>

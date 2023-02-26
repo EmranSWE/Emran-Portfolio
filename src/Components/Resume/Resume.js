@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pdfResume from "../../Assets/Updated  emran resume.pdf";
+import pdfResume from "../../Assets/emran-resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -26,7 +26,7 @@ const Resume = () => {
         </a>
         
           <div>
-          <Document file={pdfResume} className="d-flex justify-content-center">
+            <Document file={pdfResume} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </div>

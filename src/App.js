@@ -32,6 +32,7 @@ function App() {
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path='/resume' element={<Resume></Resume>}></Route>
         <Route path='/projects/:id' element={<SingleProject></SingleProject>}></Route>
+        <Route path='/home/:id' element={<SingleProject></SingleProject>}></Route>
         <Route path='*' element={<Home></Home>}></Route>
         <Route path='/message' element={<MessageList></MessageList>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

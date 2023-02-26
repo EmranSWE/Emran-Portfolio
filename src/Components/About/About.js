@@ -5,11 +5,16 @@ import Skills from './Skills';
 import Tools from './Tools';
 import GitHubContribution from './GitHubContribution';
 import SkillProgress from './SkillProgress';
+import  background from '../../Assets/footer.png'
 const About = () => {
   return (
     <div>
 
-      <div className='hero '>
+      <div style={{
+            background: `url(${background})`,
+            backgroundSize: 'cover',
+            zIndex:'-1'
+        }}  className='hero '>
         <div className="hero-content grid lg:grid-cols-3 sm:grid-cols-1 " >
           <div className='lg:col-span-2'>
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
