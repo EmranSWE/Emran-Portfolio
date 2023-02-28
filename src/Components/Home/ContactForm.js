@@ -7,7 +7,7 @@ const ContactForm = () => {
 
     const onSubmit = message => {
 
-        const url =`https://emran-portfolio-server-6vj9y.ondigitalocean.app/message`
+        const url =`https://emran-portfolio-server-side.onrender.com/message`
         fetch(url,{
             method:"POST",
             headers:{

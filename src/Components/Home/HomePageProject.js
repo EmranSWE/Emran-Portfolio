@@ -5,7 +5,7 @@ import Loading from '../Shared/Loading';
 import SingleProject from './SingleProject';
 
 const HomePageProject = () => {
-    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://emran-portfolio-server-6vj9y.ondigitalocean.app/project').then(res => res.json()))
+    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://emran-portfolio-server-side.onrender.com/project').then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>
     }

@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 
 const MessageList = () => {
 
-const {data:messages,isLoading}=useQuery('messages', () => fetch('https://emran-portfolio-server-6vj9y.ondigitalocean.app/message').then(res => res.json()))
+const {data:messages,isLoading}=useQuery('messages', () => fetch('https://emran-portfolio-server-side.onrender.com/message').then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>
     }

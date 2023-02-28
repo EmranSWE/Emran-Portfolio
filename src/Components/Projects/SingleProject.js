@@ -9,7 +9,7 @@ const SingleProject = () => {
   const { isLoading, error, data: projectDetails } = useQuery({
     queryKey: 'ProjectDetails',
     queryFn: () =>
-      fetch(`https://emran-portfolio-server-6vj9y.ondigitalocean.app/project/${id}`).then(res =>
+      fetch(`https://emran-portfolio-server-side.onrender.com/project/${id}`).then(res =>
         res.json()
       )
   });
