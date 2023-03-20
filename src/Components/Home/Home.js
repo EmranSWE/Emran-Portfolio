@@ -13,10 +13,13 @@ import {
   import { FaLinkedinIn } from "react-icons/fa";
 import HomeBlog from './HomeBlog';
 import HomePageProject from './HomePageProject';
+import Study from './Study';
+import Reference from './Reference';
 
 const Home = () => {
     return (
         <div >
+          {/* Introduction */}
             <div className='hero'>
             <div className="hero-content grid lg:grid-cols-3 sm:grid-cols-1 " >
                 <div className=' lg:col-span-2'>
@@ -38,19 +41,16 @@ const Home = () => {
             </div>
             </div>
            
-            {/* 
-        ----------------
-        My Introduction Section
-        -----------------
-        */}
            
            {/* About */}
            <About></About>
            {/* All Projects */}
            <HomePageProject></HomePageProject>
-    
+          <Study></Study>
+          {/* Reference */}
+          <Reference></Reference>
           {/* Home Page Blogs */}
-          <HomeBlog></HomeBlog>
+          {/* <HomeBlog></HomeBlog> */}
             {/* Contact */}
             <div className='grid grid-cols-1'>
                 <h1 className='text-5xl text-center mt-4'>Find Me On:</h1>

@@ -18,6 +18,8 @@ import useSound from 'use-sound';
 import mySound from './Assets/mind.mp3';
 import Blogs from './Components/Blogs/Blogs';
 import SingleProject from './Components/Projects/SingleProject';
+import Study from './Components/Home/Study';
+import Reference from './Components/Home/Reference';
 function App() {
   const [play, {stop}] = useSound(mySound, { volume: 0.1 });
 
@@ -29,11 +31,13 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/education' element={<Study></Study>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
         <Route path='/resume' element={<Resume></Resume>}></Route>
         <Route path='/projects/:id' element={<SingleProject></SingleProject>}></Route>
         <Route path='/:id' element={<SingleProject></SingleProject>}></Route>
         <Route path='*' element={<Home></Home>}></Route>
+        <Route path='/reference' element={<Reference></Reference>}></Route>
         <Route path='/message' element={<MessageList></MessageList>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/addProject' element={<AddProjects></AddProjects>}></Route>

@@ -1,15 +1,17 @@
-import React from 'react';
-import { useQuery } from 'react-query';
+import React, { useState ,useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '../Shared/Loading';
 import SingleProject from './SingleProject';
 
 const HomePageProject = () => {
-    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://emran-portfolio-server-side.onrender.com/project').then(res => res.json()))
-    if (isLoading) {
-        return <Loading></Loading>
-    }
-    const showingProject = projects.slice(0,6);
+   
+const [projects,setProjects]=useState([]);
+useEffect(()=>{
+    fetch("/projects.json")
+    .then(res =>res.json())
+    .then(data => setProjects(data))
+},[])
+   
+    const showingProject = projects.slice(0, 6);
 
     return (
         <div>

@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
 
-    const { data: projects, isLoading } = useQuery('projects', () => fetch('https://emran-portfolio-server-side.onrender.com/project').then(res => res.json()))
-    if (isLoading) {
-        return <Loading></Loading>
-    }
+    const [projects,setProjects]=useState([]);
+    useEffect(()=>{
+        fetch("/projects.json")
+        .then(res =>res.json())
+        .then(data => setProjects(data))
+    },[])
+       
 
     return (
         <div>
