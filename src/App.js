@@ -20,6 +20,7 @@ import Blogs from './Components/Blogs/Blogs';
 import SingleProject from './Components/Projects/SingleProject';
 import Study from './Components/Home/Study';
 import Reference from './Components/Home/Reference';
+import SwiperCertificate from './Components/Swiper.js/SwiperCertificate';
 function App() {
   const [play, {stop}] = useSound(mySound, { volume: 0.1 });
 

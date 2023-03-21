@@ -32,7 +32,7 @@ const Skills = () => {
             <div className='hero'>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
                     <div className="card w-96 bg-base-100 shadow-xl">
-                        <h1 className='text-center text-2xl mt-2 textSecondary'>Programming Language</h1>
+                        <h1 className='text-center text-xl mt-2 textSecondary'>Programming Language</h1>
                         <div className="card-body">
                             <div className="avatar mx-auto">
                                 <div className="w-12 mask mask-hexagon">
@@ -63,7 +63,7 @@ const Skills = () => {
                     </div>
 
                     <div className="card w-96 bg-base-100 shadow-xl">
-                    <h1 className='text-center text-2xl mt-2 textSecondary'>Frontend Development</h1>
+                    <h1 className='text-center text-xl mt-2 textSecondary'>Frontend Development</h1>
                         <div className="card-body">
                             <div className="avatar mx-auto">
                                 <div className="w-12 mask mask-hexagon">
@@ -105,7 +105,7 @@ const Skills = () => {
 
 
                     <div className="card w-96 bg-base-100 shadow-xl">
-                    <h1 className='text-center text-2xl mt-2 textSecondary'>Backend Development</h1>
+                    <h1 className='text-center text-xl mt-2 textSecondary'>Backend Development</h1>
                         <div className="card-body">
                             <div className="avatar mx-auto">
                                 <div className="w-12 mask mask-hexagon">
@@ -151,36 +151,35 @@ const Skills = () => {
                 </div>
 
             </div>
-            <h1 className='text-center my-5 text-4xl textSecondary'>Tools I used For Data Analysis</h1>
-
-            <div className='p-5 lg:mx-28 grid lg:grid-cols-6  md:grid-cols-3 sm:grid-cols-2 bg-base-200'>
+            <h1 className='text-center my-5 text-xl textSecondary'>Tools I used For Data Analysis</h1>
+            <div className='lg:mx-28 justify-items-center grid lg:grid-cols-6  md:grid-cols-3 bg-base-200'>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={pandas} />
                 </div>
             </div>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={bigquery} />
                 </div>
             </div>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={looker} />
                 </div>
             </div>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={linux} />
                 </div>
             </div>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={numpy} />
                 </div>
             </div>
             <div className="avatar mx-auto">
-                <div className="w-3/4">
+                <div className="w-1/2">
                     <img src={jupyter} />
                 </div>
             </div>

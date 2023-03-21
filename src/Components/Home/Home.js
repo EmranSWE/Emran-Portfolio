@@ -15,6 +15,7 @@ import HomeBlog from './HomeBlog';
 import HomePageProject from './HomePageProject';
 import Study from './Study';
 import Reference from './Reference';
+import Experience from '../About/Experience';
 
 const Home = () => {
     return (
@@ -42,8 +43,8 @@ const Home = () => {
             </div>
            
            
-           {/* About */}
-           <About></About>
+           {/* Experience */}
+          <Experience></Experience>
            {/* All Projects */}
            <HomePageProject></HomePageProject>
           <Study></Study>

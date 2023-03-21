@@ -27,7 +27,7 @@ const Study = () => {
             <div className="hero-content flex-col lg:flex-row">
                <div>
                <h1>Higher Secondary (HSC)</h1>
-               <p>2015-2016</p>
+               <p>2016-2017</p>
                </div>
                 <div>
                     <h1 className="text-3xl font-bold">Department of Science</h1>
@@ -45,8 +45,8 @@ const Study = () => {
         <div className="hero  my-5 bg-base-300 rounded-lg border-cyan-600 border-2 ">
             <div className="hero-content flex-col lg:flex-row">
                <div>
-               <h1>Secondary School Certificate</h1>
-               <p>2013-2014</p>
+               <h1>Secondary  (SSC)</h1>
+               <p>2014-2015</p>
                </div>
                 <div>
                     <h1 className="text-3xl font-bold">Group Science</h1>
