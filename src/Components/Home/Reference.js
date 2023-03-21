@@ -46,13 +46,13 @@ const Reference = () => {
                                     </div>
                                 </div>
                                
-                                <p className='text-3xl'>Mr. S A M Matiur Rahman</p>
+                                <p className='text-3xl'>Mr. SAM Matiur Rahman</p>
                                 <h1 className='text-xl'>Associate Professor  </h1>
                                 <p>Department of Software Engineering,DIU</p>
                                 <p>Email:matiur.swe@diu.edu.bd</p>
                             </div>
                             <div>
-                                <h1> I had the pleasure of teaching Emran in the Object Oriented Programming course, and he demonstrated exceptional proficiency and deep understanding of the subject matter. His mastery of programming concepts and his ability to apply them to real-world problems were impressive. Emran actively participated in class discussions, and his insightful contributions often elevated the level of discourse. Emran is a diligent and conscientious student who goes above and beyond what is required. His work ethic, intellectual curiosity, and passion for learning are admirable, and I am confident that he will continue to excel in all his future endeavors. I wholeheartedly recommend him for any opportunities that may arise, as I am certain that he will make a valuable contribution wherever he goes.</h1>
+                                <h1> I had the pleasure of teaching Emran in the Object Oriented Programming course, and he demonstrated exceptional proficiency and deep understanding of the subject matter. His mastery of programming concepts and his ability to apply them to real-world problems were impressive. Emran actively participated in class discussions, and his insightful contributions often elevated the level of discourse. His work ethic, intellectual curiosity, and passion for learning are admirable, and I am confident that he will continue to excel in all his future endeavors. I wholeheartedly recommend him for any opportunities that may arise, as I am certain that he will make a valuable contribution wherever he goes.</h1>
                             </div>
                         </div>
                     </div>

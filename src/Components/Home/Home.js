@@ -45,17 +45,21 @@ const Home = () => {
            
            {/* Experience */}
           <Experience></Experience>
+
            {/* All Projects */}
            <HomePageProject></HomePageProject>
+
+           {/* Study Summery */}
           <Study></Study>
+          
           {/* Reference */}
           <Reference></Reference>
           {/* Home Page Blogs */}
           {/* <HomeBlog></HomeBlog> */}
             {/* Contact */}
             <div className='grid grid-cols-1'>
-                <h1 className='text-5xl text-center mt-4'>Find Me On:</h1>
-                <p className='text-xl text-center'>Feel Free <span className='textPrimary'>To Connect</span>  With Me!</p>
+                <h1 className='text-5xl text-center mt-4'>Find <span className='textPrimary'> Me </span>On:</h1>
+                <p className='text-xl text-center'>Feel Free <span className='textSecondary'>To Connect</span>  With Me!</p>
                 <div className='text-center'>
                 <ul className=" flex justify-center">   
              <li>
@@ -111,7 +115,7 @@ const Home = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Send <span className='textPrimary'> Message</span> now!</h1>
-                        <p className="py-6">I'm interested in freelance opportunities - especially ambitious or large projects. However, if you have other request or question, don't hesitate to contact with me</p>
+                        <p className="py-6">I'm interested in freelance opportunities - especially ambitious or large projects or open-source projects. However, if you have other request or question, don't hesitate to contact with me</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">

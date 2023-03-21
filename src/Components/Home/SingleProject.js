@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const SingleProject = ({ project }) => {
     const { img, name, description, github, live,_id } = project;
     return (
-        <div className="card w-96 bg-base-100 my-4 shadow-lg shadow-indigo-500   ">
-      <figure className="px-10 pt-10">
+        <div className="card  w-3/4 bg-base-100 my-4 shadow-md shadow-indigo-500   ">
+      <figure className="px-6 pt-6">
         <img src={img} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body items-center ">

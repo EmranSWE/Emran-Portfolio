@@ -33,12 +33,12 @@ const Footer = () => {
                 <div>
                     <span className="footer-title">More </span>
                     <a  className="link link-hover"><Link to='/blogs'>Blogs</Link></a>
-                    <a className="link link-hover">Recent Activities</a>
+                    <a className="link link-hover" target="_blank" href="https://www.linkedin.com/in/emran2k18/">Recent Activities</a>
                     <a className="link link-hover">Award</a>
                 </div>
             </div>
             <div>
-                <p className='text-center my-10'>Copyright © {year} - Emran </p>
+                <p className='text-center my-10'>Copyright © {year} - <span className='textSecondary'> Emran</span> </p>
             </div>
         </footer>
     );

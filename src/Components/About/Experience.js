@@ -5,10 +5,10 @@ import { FcPhone } from "react-icons/fc";
 import { FaMapMarked } from "react-icons/fa";
 import { FaLanguage } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-
 import Skills from './Skills';
 import background from '../../Assets/footer.png'
 import SwiperCertificate from '../Swiper.js/SwiperCertificate';
+import GitHubContribution from './GitHubContribution';
 const Experience = () => {
     return (
         <div>
@@ -16,8 +16,8 @@ const Experience = () => {
         background: `url(${background})`,
         backgroundSize: 'cover',
         zIndex: '-1'
-      }} className='hero '>
-        <div className="lg:ml-28 grid lg:grid-cols-3 sm:grid-cols-1  lg:gap-8 p-6" >
+      }} >
+        <div className="lg:ml-28 grid lg:grid-cols-3 sm:grid-cols-1  lg:gap-8 p-5" >
           <div className='lg:col-span-2'>
             <h1 className='text-4xl'>
               Know Who <strong className="textPrimary">I'M</strong>
@@ -43,19 +43,19 @@ const Experience = () => {
           <div>
             <h1 className='text-4xl mb-2'>Basic <strong className="textPrimary"> Information</strong> </h1>
             <li className="flex items-center my-2">
-              <span className='text-2xl'><SiGmail /></span> <h1 className='ml-5'>mdemran.swe@gmail.com</h1>
+              <span className='text-2xl'><span className='textSecondary'><SiGmail /></span></span> <h1 className='ml-5'>mdemran.swe@gmail.com</h1>
             </li>
             <li className="flex items-center my-2">
-              <span className='text-2xl'> <BsLinkedin /></span> <h1 className='ml-5'>https://www.linkedin.com/in/emran2k18/</h1>
+              <span className='text-2xl'> <span className='textSecondary'><BsLinkedin /></span> </span> <h1 className='ml-5'>https://www.linkedin.com/in/emran2k18/</h1>
             </li>
             <li className="flex items-center my-2">
-              <span className='text-2xl'> <FcPhone /></span> <h1 className='ml-5'>+8801838235450</h1>
+              <span className='text-2xl textSecondary'> <FcPhone /></span> <h1 className='ml-5'>+8801838235450</h1>
             </li>
             <li className="flex items-center my-2">
-              <span className='text-2xl'><FaMapMarked /> </span> <h1 className='ml-5'>Bosila,Mohammadpur,Dhaka</h1>
+              <span className='text-2xl textSecondary'><FaMapMarked /> </span> <h1 className='ml-5'>Bosila,Mohammadpur,Dhaka</h1>
             </li>
             <li className="flex items-center my-2">
-              <span className='text-2xl'><FaLanguage /> </span> <h1 className='ml-5'>Bangla,English</h1>
+              <span className='text-2xl textSecondary'><FaLanguage /> </span> <h1 className='ml-5'>Bangla,English</h1>
             </li>
           </div>
         </div>
@@ -64,10 +64,13 @@ const Experience = () => {
       {/* Technical Skills */}
       <h1 className='text-center text-4xl my-7'>Technical <strong className='textPrimary'>Skills</strong> </h1>
       <Skills></Skills>
-
       <h1 className='text-center text-4xl my-7'>Experience</h1>
-
       <SwiperCertificate></SwiperCertificate> 
+      <h1 className='text-center text-5xl my-7'>Github <span className='textPrimary'>Contribution!</span> </h1>
+      <div className='flex justify-center '>
+        <GitHubContribution></GitHubContribution>
+      </div>
+      
         </div>
     );
 };

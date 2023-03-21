@@ -15,7 +15,7 @@ useEffect(()=>{
 
     return (
         <div>
-            <h1 className='text-3xl text-center my-5'>My <span className='textPrimary'>Recent</span>  Projects</h1>
+            <h1 className='text-5xl text-center my-5'>My <span className='textPrimary'>Recent</span> Projects</h1>
             <p className='text-xl text-center'>Here are few <span className='textPrimary'>projects</span>  I've done recently</p>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 
             sm:grid-cols-1 justify-items-center '>

@@ -5,6 +5,9 @@ import logo from '../../Assets/favicon.png'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from './Loading';
+import {AiFillLinkedin} from "react-icons/ai";
+import { AiFillGithub } from 'react-icons/ai';
+
 import { signOut } from 'firebase/auth';
 import { toast } from 'react-toastify';
 const Navbar = () => {
@@ -40,8 +43,6 @@ const Navbar = () => {
                          <li><Link to='/addproject'>Add Project</Link></li>
                     <li><Link to='/message'>message</Link></li></>
                    }
-
-                   
                     </ul>
                 </div>
                 {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}

@@ -30,7 +30,7 @@ const Skills = () => {
     return (
         <div >
             <div className='hero'>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-5">
                     <div className="card w-96 bg-base-100 shadow-xl">
                         <h1 className='text-center text-xl mt-2 textSecondary'>Programming Language</h1>
                         <div className="card-body">
