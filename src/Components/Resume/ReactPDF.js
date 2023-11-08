@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { Document, Page } from 'react-pdf';
+import React, { useState } from "react";
+import { Document, Page } from "react-pdf";
 import pdfResume from "../../Assets/Updated  emran resume.pdf";
 
 const ReactPDF = () => {
-    const [numPages, setNumPages] = useState(null);
+  const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
-    return (
-        <div>
+  return (
+    <div>
       <Document file={pdfResume} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
@@ -18,7 +18,7 @@ const ReactPDF = () => {
         Page {pageNumber} of {numPages}
       </p>
     </div>
-    );
+  );
 };
 
 export default ReactPDF;

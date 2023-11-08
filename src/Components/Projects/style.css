@@ -1,0 +1,7 @@
+.project-card .image-container img {
+  transition: transform 5s ease;
+}
+
+.project-card:hover .image-container img {
+  transform: translateY(-100%);
+}

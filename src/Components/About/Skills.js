@@ -19,7 +19,6 @@ import vitest from "../../Assets/tools/vitest.jpg";
 import jwt from "../../Assets/tools/jwt.png";
 import postgress from "../../Assets/tools/pgres.png";
 import prisma from "../../Assets/tools/prisma.webp";
-
 import typescript from "../../Assets/tools/typescript.png";
 import firebase from "../../Assets/tools/firebase.png";
 import github from "../../Assets/tools/Git.png";
@@ -71,6 +70,7 @@ const skillsData = [
     skills: [
       { id: "javascript", name: "JavaScript", image: javascript },
       { id: "cplus", name: "C++", image: cplus },
+
       { id: "python", name: "Python", image: python },
       { id: "java", name: "Java", image: java },
     ],

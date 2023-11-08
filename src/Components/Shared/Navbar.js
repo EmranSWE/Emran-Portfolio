@@ -1,23 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/favicon.png";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import Loading from "./Loading";
-
-import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
+import music from "../../Assets/mind.mp3";
+import { AiFillSound, AiOutlineSound } from "react-icons/ai";
 const Navbar = () => {
-  const [user, loading, error] = useAuthState(auth);
+  // const [user, loading, error] = useAuthState(auth);
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
 
-  if (loading) {
-    return <Loading></Loading>;
-  }
-  if (error) {
-    return toast.error("Failed to sign in");
-  }
-  const logout = () => {
-    signOut(auth);
+  // if (loading) {
+  //   return <Loading />;
+  // }
+  // if (error) {
+  //   return toast.error("Failed to sign in");
+  // }
+
+  const toggleMusic = () => {
+    const audioElement = document.getElementById("backgroundMusic");
+
+    if (audioElement) {
+      if (isMusicPlaying) {
+        audioElement.pause();
+      } else {
+        audioElement.volume = 0.1;
+        audioElement.play();
+      }
+
+      setIsMusicPlaying(!isMusicPlaying);
+    }
   };
 
   return (
@@ -60,7 +73,7 @@ const Navbar = () => {
               <Link to="/blogs">Blogs</Link>
             </li>
 
-            {user?.email === "mdemran.swe@gmail.com" && (
+            {/* {user?.email === "mdemran.swe@gmail.com" && (
               <>
                 {" "}
                 <li>
@@ -73,7 +86,7 @@ const Navbar = () => {
                   <Link to="/message">message</Link>
                 </li>
               </>
-            )}
+            )} */}
           </ul>
         </div>
         {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
@@ -96,7 +109,7 @@ const Navbar = () => {
             <Link to="/resume">Resume</Link>
           </li>
 
-          {user?.email === "mdemran.swe@gmail.com" && (
+          {/* {user?.email === "mdemran.swe@gmail.com" && (
             <>
               {" "}
               <li>
@@ -106,13 +119,22 @@ const Navbar = () => {
                 <Link to="/message">message</Link>
               </li>
             </>
-          )}
+          )} */}
           <li>
             <Link to="/blogs">Blogs</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">{/* <ChangeThemes></ChangeThemes> */}</div>
+      <div className="navbar-end">
+        <div className="navbar-end">
+          <button onClick={toggleMusic} className="music-toggle-button">
+            {isMusicPlaying ? <AiFillSound /> : <AiOutlineSound />}
+          </button>
+          <audio id="backgroundMusic" autoPlay loop>
+            <source src={music} type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
     </div>
   );
 };

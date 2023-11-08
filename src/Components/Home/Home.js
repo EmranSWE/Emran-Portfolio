@@ -28,9 +28,9 @@ const Home = () => {
               </span>
             </p>
             <p className="text-5xl font-bold pt-3">
-              I'M{" "}
+              I'M
               <span className="text-5xl font-bold textPrimary animate__animated animate__fadeInLeft animate__bounce">
-                MD EMRAN{" "}
+                MD EMRAN
               </span>
             </p>
             <p className="text-5xl font-bold my-8 textSecondary">
@@ -55,9 +55,6 @@ const Home = () => {
 
       {/* Reference */}
       <Reference></Reference>
-      {/* Home Page Blogs */}
-      {/* <HomeBlog></HomeBlog> */}
-      {/* Contact */}
       <div className="grid grid-cols-1">
         <h1 className="text-5xl text-center mt-4">
           Find <span className="textPrimary"> Me </span>On:

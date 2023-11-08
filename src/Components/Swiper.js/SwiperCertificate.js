@@ -86,7 +86,7 @@ const SwiperCertificate = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="Jan 2022 - Present"
+        date="Jan 2023 - Present"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<TiShoppingBag />}
         contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -105,11 +105,7 @@ const SwiperCertificate = () => {
           Designing and developing web applications using various technologies
           such as HTML, CSS, JavaScript, and a variety of programming languages
         </li>
-        <li>
-          {" "}
-          Building and integrating back-end systems and databases, such as MySQL
-          or MongoDB, to support the front-end features
-        </li>
+
         <li>
           Maintaining existing applications and adding new features as required.
         </li>

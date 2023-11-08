@@ -5,52 +5,32 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-
 const Resume = () => {
-    const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(1200);
 
-    useEffect(() => {
-      setWidth(window.innerWidth);
-    }, []);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
-    return (
-         <div >
-        <div className="grid justify-items-center my-4  ">
-        <a  href={pdfResume}>
-        <button className="btn btn-primary"
-        target='_blank'
-          >
-            < AiOutlineDownload />
-            &nbsp;Download CV
-          </button>
-        </a>
-        
-          <div>
-            <Document file={pdfResume} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </div>
-        </div>
+  const handleDownloadClick = () => {
+    // Create an anchor element to trigger the download
+    const link = document.createElement("a");
+    link.href = pdfResume;
+    link.target = "_blank";
+    link.download = "emran-resume.pdf"; // Specify the file name for download
+    link.click();
+  };
 
-        
-
-        <div className="grid justify-items-center">
-        <a  href={pdfResume}>
-          <button className="btn btn-primary"
-            href={pdfResume}
-            target="_blank" 
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </button>
-          </a>
-        </div>
-        
-
-      
-         
+  return (
+    <div>
+      <div className="grid justify-items-center my-4 ">
+        <button className="btn btn-primary" onClick={handleDownloadClick}>
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </button>
+      </div>
     </div>
-    );
+  );
 };
 
 export default Resume;
