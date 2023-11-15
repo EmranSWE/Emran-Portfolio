@@ -29,7 +29,7 @@ const Home = () => {
             </p>
             <p className="text-5xl font-bold pt-3">
               I'M
-              <span className="text-5xl font-bold textPrimary animate__animated animate__fadeInLeft animate__bounce">
+              <span className="text-5xl font-bold textPrimary animate__animated animate__fadeInLeft animate__bounce ml-2">
                 MD EMRAN
               </span>
             </p>
