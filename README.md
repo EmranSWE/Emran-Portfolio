@@ -1,13 +1,11 @@
 # Emran Portfolio
 
 ## Feature of the website.
-
-<h2> 📖 Multi Page </h2>
-<h2> 🎨 Styled with Tailwind CSS and DaisyUi with css and its easy to customize colors </h2>
-<h2> 📱 Fully Responsive  </h2>
+- 📖 Multi Page 
+- 🎨 Styled with Tailwind CSS and DaisyUi with css and its easy to customize colors 
+- 📱 Fully Responsive 
 
 ## Technology I Used:
-
 - 📖 HTML5
 - CSS3
 - REACTJS
@@ -15,7 +13,6 @@
 - DaisyUI
 
 ## Tools I Used
-
 - VS code
 - Node
 - Git
