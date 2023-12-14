@@ -20,7 +20,7 @@ import Reference from "./Components/Home/Reference";
 import { useEffect } from "react";
 function App() {
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", "dark");
+    document.documentElement.setAttribute("data-theme", "black");
   }, []);
   return (
     <div>

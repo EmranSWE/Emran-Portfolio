@@ -28,11 +28,10 @@ const HomePageProject = () => {
           ))}
         </div>
       </div>
-
-      <p className="text-sm text-center">
-        Find All My{" "}
-        <span className="textPrimary">
-          <Link to="/projects">Projects</Link>
+      <p className="text-2xl text-center mb-6">
+        Explore All My{" "}
+        <span style={{ color: "yellow" }}>
+          <Link to="/projects">PROJECTS</Link>
         </span>
       </p>
     </div>

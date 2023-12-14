@@ -13,7 +13,7 @@ const Footer = () => {
       }}
       className="p-10 "
     >
-      <div className="footer ">
+      <div className="footer  ">
         <div>
           <img src={logo} className="w-20" alt="" />
           <p className="textPrimary">

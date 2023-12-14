@@ -1,5 +1,5 @@
 import React from "react";
-import homeMain from "../../Assets/EMRAN.png";
+import homeMain from "../../Assets/banner.svg";
 import ContactForm from "./ContactForm";
 import Type from "./Type";
 import "animate.css";
@@ -8,11 +8,14 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLanguage, FaLinkedinIn, FaMapMarked } from "react-icons/fa";
 import HomePageProject from "./HomePageProject";
 import Study from "./Study";
 import Reference from "./Reference";
 import Experience from "../About/Experience";
+import { FcPhone } from "react-icons/fc";
+import { BsLinkedin } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -20,7 +23,7 @@ const Home = () => {
       {/* Introduction */}
       <div className="hero">
         <div className="hero-content grid lg:grid-cols-3 sm:grid-cols-1 ">
-          <div className=" lg:col-span-2">
+          <div className=" lg:col-span-2 max-auto">
             <p className="text-4xl textEffect ">
               Hi There!
               <span className="wave text-4xl" role="img" aria-labelledby="wave">
@@ -39,7 +42,7 @@ const Home = () => {
           </div>
 
           <div>
-            <img src={homeMain} className="p-2" alt="home main" />
+            <img src={homeMain} className="p-2 " alt="home main" />
           </div>
         </div>
       </div>
@@ -55,9 +58,11 @@ const Home = () => {
 
       {/* Reference */}
       <Reference></Reference>
+
+      {/* Basic Information and contact us */}
       <div className="grid grid-cols-1">
         <h1 className="text-5xl text-center mt-4">
-          Find <span className="textPrimary"> Me </span>On:
+          Find <span className="textPrimary"> Me </span>On
         </h1>
         <p className="text-xl text-center">
           Feel Free <span className="textSecondary">To Connect</span> With Me!
@@ -84,7 +89,6 @@ const Home = () => {
                 className="textAccent"
               >
                 <p className="text-3xl mx-2">
-                  {" "}
                   <AiOutlineTwitter />
                 </p>
               </a>
@@ -118,22 +122,61 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="hero min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">
-              Send <span className="textPrimary"> Message</span> now!
-            </h1>
+      <div className="hero-content grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 justify-center">
+        {/* Left Columns */}
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mx-auto">
+          <div className="card-body">
+            <ContactForm></ContactForm>
+          </div>
+        </div>
+
+        {/* Right Column */}
+        <div className="col-span-2 lg:col-span-1 mx-auto">
+          <div className="text-center lg:text-left mx-auto">
+            <div>
+              <h1 className="text-3xl font-bold">
+                More <strong className="textPrimary"> Information</strong>
+              </h1>
+              <li className="flex items-center my-2">
+                <span className="text-2xl">
+                  <span className="textSecondary">
+                    <SiGmail />
+                  </span>
+                </span>
+                <h1 className="ml-5">mdemran.swe@gmail.com</h1>
+              </li>
+              <li className="flex items-center my-2">
+                <span className="text-2xl">
+                  <span className="textSecondary">
+                    <BsLinkedin />
+                  </span>
+                </span>
+                <h1 className="ml-5">https://www.linkedin.com/in/emran-swe/</h1>
+              </li>
+              <li className="flex items-center my-2">
+                <span className="text-2xl textSecondary">
+                  <FcPhone />
+                </span>
+                <h1 className="ml-5">+8801838235450</h1>
+              </li>
+              <li className="flex items-center my-2">
+                <span className="text-2xl textSecondary">
+                  <FaMapMarked />
+                </span>
+                <h1 className="ml-5">Bosila,Mohammadpur,Dhaka</h1>
+              </li>
+              <li className="flex items-center my-2">
+                <span className="text-2xl textSecondary">
+                  <FaLanguage />{" "}
+                </span>{" "}
+                <h1 className="ml-5">Bangla,English</h1>
+              </li>
+            </div>
             <p className="py-6">
               I'm interested in freelance opportunities - especially ambitious
               or large projects or open-source projects. However, if you have
               other request or question, don't hesitate to contact with me
             </p>
-          </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
-              <ContactForm></ContactForm>
-            </div>
           </div>
         </div>
       </div>

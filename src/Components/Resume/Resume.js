@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pdfResume from "../../Assets/emran-resume.pdf";
+import pdfResume from "../../Assets/emran-cv.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -17,7 +17,7 @@ const Resume = () => {
     const link = document.createElement("a");
     link.href = pdfResume;
     link.target = "_blank";
-    link.download = "emran-resume.pdf"; // Specify the file name for download
+    link.download = "emran-cv.pdf";
     link.click();
   };
 

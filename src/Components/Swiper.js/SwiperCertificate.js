@@ -12,6 +12,45 @@ const SwiperCertificate = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
+        date="May 2023 - Present"
+        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        icon={<TiShoppingBag />}
+      >
+        <h3 className="vertical-timeline-element-title text-2xl textSecondary">
+          Full stack developer
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+          Devlab Solution Limited
+        </h4>
+
+        <li>
+          Collaborated cross-functionally with design and backend teams to
+          develop in-house web products.
+        </li>
+        <li>
+          Contributed to the creation of user-friendly, visually appealing
+          dynamic products in collaboration with experienced developers
+        </li>
+        <li>
+          Developed dynamic UI by crafting reusable components to enhance
+          modularity and efficiency
+        </li>
+        <li>
+          Managed the creation and maintenance of front-end code for production
+          websites, including redesign, updates, and ongoing production tasks.
+        </li>
+        <li>
+          Recognized and implemented dynamic web solutions in alignment with
+          company standards.
+        </li>
+        <li style={{ color: "yellow" }}>
+          Tech Stack:ReactJs, Next.js, TypeScript, Redux,Material Ui,NodeJs,
+          ExpressJs,Prisma ORM, Mongoose,AntDesing
+        </li>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
         date="Sep 2023 - Nov 2023"
         contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -31,39 +70,14 @@ const SwiperCertificate = () => {
           and transaction management, significantly improving operational
           efficiency.
         </li>
-        <li>
-          Implemented JWT for secure signup and login procedures, ensuring
-          robust user account protection and privacy.
-        </li>
+
         <li>
           Tech Stack and Development: Next.js, TypeScript, and Redux for a
           responsive front end; Node.js and Express for a reliable back end;
-          Prisma ORM and PostgreSQL for database integrity; and JWT alongside
-          Zod for secure and validated operations.
+          Prisma ORM and PostgreSQL for database integrity.
         </li>
       </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="Jan 2023 - Oct 2023"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<TiShoppingBag />}
-      >
-        <h3 className="vertical-timeline-element-title text-2xl textSecondary">
-          Full stack Development
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Programming Hero</h4>
-        <li>
-          Building and integrating robust backend systems utilizing Node.js and
-          Express,AWS, docker, with a focus on database integration using both
-          SQL and NoSQL technologies like MySQL, MongoDB, and Prisma.
-        </li>
-        <li>
-          Hands-on development and scaling of full-stack applications,
-          showcasing a versatile skill set across various technologies,
-          including TypeScript.
-        </li>
-      </VerticalTimelineElement>
+
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
